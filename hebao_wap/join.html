@@ -1,0 +1,561 @@
+﻿
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="data-spm" content="1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="荷包，荷包金融，p2p，互联网金融，金融" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>荷包金融</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+<style>
+	#join2, #join3 {
+		display: none;
+	}
+	.joinUsContanier+.footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+	.joinUs-detail {
+		padding-bottom: 80px;
+	}
+	.join1{display: none;}
+</style>
+</head>
+<body>
+<!-- 	<div class="mb_erwei">
+		<h2>扫二维码关注官方微信</h2>
+		<p>1.长按将二维码保存至手机相册；<br />
+		2.打开微信“扫一扫”，点击右上角的相册，选择保存的二维码图片，就可以找到我们了。</p>
+		<img id='touchDown' src="img/226era.png" />
+		<i id="mb_wcClose"></i>
+	</div> -->
+	<div class="HBshadow"></div>
+	<div class="headerContainer">
+		<div class="HBheader">
+			<a style="display:block" href="index.html"><div class="HBlogo"></div></a>
+			<div class="s_open">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="s_navList">
+				<ul>
+<!-- 					<li class="mb_logwx">关注荷包微信</li> -->
+					<li><a href="index.html">首页</a></li>
+					<li><a href="managemonny.html">荷包理财</a></li>
+					<li><a href="loan.html">荷包贷款</a></li>
+					<li class="select">关于荷包</li>
+					<li class="mb_pl"><a href="http://blog.hebaodai.com">官方博客</a></li>	
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="nav_second">
+		<ul>
+			<li><a href="about.html">关于荷包</a></li>
+			<li class="second_bin"><a href="join.html" style="color:#ffad2c">加入我们</a></li>
+			<li><a href="report.html">媒体报道</a></li>
+			<!-- <li><a href="monthreport.html">荷包月报</a></li> -->
+		</ul>
+		<div class="clearboth"></div>
+		<span id="slideCap"></span>
+	</div>
+	<div class="joinUsContanier">
+		<div id="join1" class="join1">
+			<div class="joinUs-title">
+				<h1>选择职业分类</h1>
+			</div>
+			<div class="joinUs">
+				<a href="javascript:void(0)" class="select" data-type="1" title="全部职位">
+					<img src="img/zw1_1.png" alt="全部职位">
+				</a>
+				<a href="javascript:void(0)" data-type="2" title="技术">
+					<img src="img/zw2_1.png" alt="技术">
+				</a>
+				<a href="javascript:void(0)" data-type="3" title="产品运营">
+					<img src="img/zw3_1.png" alt="产品运营">
+				</a>
+				<a href="javascript:void(0)" data-type="4" title="金融">
+					<img src="img/zw4_1.png" alt="金融">
+				</a>
+				<a href="javascript:void(0)" data-type="5" title="职能">
+					<img src="img/zw5_1.png" alt="职能">
+				</a>
+			</div>
+		</div>
+		<div id="join2" class="join2">
+			<div class="joinUs-title">
+				<a href="javascript:void(0)" class="btn-back btn-back2">
+					<img src="img/back.png" alt="返回">
+				</a>
+				<h1 class="joinUsTitle2">全部职位</h1>
+			</div>
+			<div class="joinUs-list">
+				<ul id="jobList"></ul>
+				
+				<!-- <li>
+					<a href="javascript:void(0);" class="loadMore">加载更多...</a>
+				</li> -->
+			</div>
+		</div>
+		<div id="join3" class="join3">
+			<div class="joinUs-title">
+				<a href="javascript:void(0)" class="btn-back btn-back3" data-type="">
+					<img src="img/back.png" alt="返回">
+				</a>
+				<h1 class="joinUsTitle3"></h1>
+			</div>
+			<div class="joinUs-detail">
+				<h3>岗位职责：</h3>
+				<p class="duty"></p>
+				<h3>任职要求：</h3>
+				<p class="require"></p>
+				<h3 class="tips">温馨提醒：</h3>
+				<p class="tips"></p>
+				<div>简历投递至 lannian@hebaodai.com</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="mw">
+			<p>Copyright©荷包金融 All Rights Reserved&nbsp;&nbsp;<span><a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action">粤ICP备14088581号-1</a></span></p>
+			<ul>
+				<li><a href="join.html">加入我们</a></li>
+				<li><a href="contect.html">联系我们</a></li>
+				<li><a href="about.html">关于我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<div style="display:none">
+	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1253516820'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1253516820%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-69693328-1', 'auto');ga('send', 'pageview');
+	</script>
+</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script>
+		var joinData = [
+			{
+				t: '系统架构师',
+				n: 2,
+				p: '技术类',
+				d: '互联网产品部',
+				c: '深圳总部',
+				z: '1、负责系统架构整体设计，技术架构选型，并主导功能模块设计、应用数据库设计、对外接口设计；<br><br>\
+					2、指导、承担系统核心功能的研发工作；负责核心技术问题的攻关，系统优化，协助解决项目开发过程中的技术难题；<br><br>\
+					3、积极了解业界发展，关注互联网相关新技术及趋势。',
+				r: '1、全日制本科及以上学历；<br>\
+					2、五年及以上互联网领域经验，有大型互联网公司经验者优先；<br><br>\
+					3、至少两年以上的架构设计工作经验，对互联网业务以及技术有深刻的理解；<br><br>\
+					4、精通网站性能优化、http协议、分布式、多线程等高性能架构相关技术；<br><br>\
+					5、精通面向对象的分析和设计技术，包括设计模式、UML建模等；<br><br>\
+					6、精通高负载Web、APP应用的关键技术，如负载均衡、集群、容灾备份、纵横向扩展；<br><br>\
+					7、熟悉现行主流NoSQL数据库、熟悉它们在不同场景下的优劣、保证高可用；<br><br>\
+					8、具有良好的沟通能力和平台级产品开发经验；<br>\
+					9、具备对未来互联网业务以及技术的敏感性，具备较强的技术规划能力，具备良好的敬业精神和团队合作精神。'
+			},
+			{
+				t: 'JAVA开发工程师',
+				n: 2,
+				p: '技术类',
+				d: '互联网产品部',
+				c: '深圳总部',
+				z: '1、负责核心业务模块的设计与开发；<br><br>\
+					2、理解系统的业务需求，制定系统的整体框架；<br><br>\
+					3、参与公司底层技术架构研发；<br><br>\
+					4、了解并学习新的互联网行业技术，积极主动和技术同事分享，提升公司整体技术水平；<br><br>\
+					5、学习并了解公司业务相关的行业用户，积极主动参加到公司项目的用户体验当中。',
+				r: '1、计算机及相关专业本科以上学历；<br><br>\
+					2、精通Java，J2ee，Javascript相关技术和体系架构，具备3年以上相关项目开发经验；<br><br>\
+					3、熟悉spring， struts， svn工具；<br><br>\
+					4、熟悉mysql数据库，了解SQL优化；<br><br>\
+					5、熟悉LINUX操作系统，熟悉SHELL编程；<br>\
+					6、有过大型互联网应用的开发经验，熟悉缓存架构，分布式架构，了解集群、负载均衡和容灾；<br><br>\
+					7、熟悉敏捷迭代开发流程； <br><br>\
+					8、具有较强的团队合作意识，具有较强的分析、设计能力和语言文字表达能力。'
+			},
+			{
+				t: '后端开发工程师（.NET）',
+				n: 2,
+				p: '技术类',
+				d: '互联网产品部',
+				c: '深圳总部',
+				z: '1、功能需求分析；<br>\
+					2、核心业务功能开发；<br>\
+					3、架构拓展开发及维护；<br>\
+					4、业务数据表设计，数据库性能及结构优化；<br>\
+					5、项目自动构建发布；<br>\
+					6、代码质量监管；<br>\
+					7、技术创新应用及分享。',
+				r: '1、计算机相关专业本科以上学历；<br>\
+					2、4年以上ASP.NET（C#）企业应用开发经验；<br>\
+					3、熟练WCF、MVC、EntityFramework等框架的使用；<br>\
+					3、熟练Linq、 Html 、JavaScript(jQuery)；<br>\
+					4、熟练SQL Server、MySQL数据库设计与应用；<br>\
+					6、深刻理解面向对象编程的核心思想，熟悉设计模式，能撰写规范的技术文档；<br>\
+					7、具有良好的人际沟通能力和团队合作精神及较强的学习能力，性格开朗，善于分享；<br>\
+					8、有金融行业相关工作经验优先。'
+			},
+			{
+				t: '安卓开发工程师',
+				n: 2,
+				p: '技术类',
+				d: '互联网产品部',
+				c: '深圳总部',
+				z: '1、参与公司移动互联网产品的设计开发工作；<br>\
+					2、参与产品的需求分析，进行系统模块的设计；<br>\
+					3、独立高效地完成产品核心模块的编码和单元测试；<br>\
+					4、依据公司规范编写相应的技术文档；<br>\
+					5、根据业务需求与用户反馈不断优化使用体验。',
+				r: '1、计算机相关专业本科以上学历，三年互联网和移动互联网行业工作经验；<br>\
+					2、至少两年以上Android开发经验，作为核心工程师完整开发过一个以上Android应用的经验；<br>\
+					3、精通Android开发平台的框架原理，能够熟练使用Android SDK；熟悉Android系统体系结构、懂Framework以及底层库更佳；<br>\
+					4、Java基础扎实，熟悉Java核心类库、数据结构、算法和设计模式；<br>\
+					5、工作积极主动，学习能力强，有较强的分析和解决问题的能力，具有良好的沟通能力和团队合作意识；<br>\
+					6、具有金融交易类移动App开发背景更佳，有独立开发作品者优先考虑；<br>\
+					7、良好的面向对象分析、设计能力、规范的编程风格和良好的文档习惯；<br>\
+					8、有较高的程序开发及调试能力；<br>\
+					9、善与人沟通、责任心强、具有团队合作精神、对编程有浓厚的兴趣、有自己的想法，具备良好的自学能力和独立思考解决问题的能力。'
+			},
+			{
+				t: '自动化测试工程师',
+				n: 2,
+				p: '技术类',
+				d: '互联网产品部',
+				c: '深圳总部',
+				z: '1、开发自动化测试框架，设计自动化测试用例，编写并维护自动化测试脚本；<br>\
+					2、参与需求、方案设计的评审，设计测试方案、测试用例，执行测试；<br>\
+					3、能熟练运用自动测试工具对系统进行系统、功能等测试；<br>\
+					4、根据项目特点探索新的测试方法和工具，提高软件测试质量和效率。',
+				r: '1、大专以上学历，正规高校计算机相关专业；<br>\
+					2、具备3年以上软件测试经验，一年以上自动化测试经验，有搭建自动化测试框架能力者优先；<br>\
+					3、熟悉ORACLE、SQL Server、Mysql等主流数据库，并能熟练编写SQL语句；<br>\
+					4、精通QTP、app软件常用的自动化测试工具，有app软件、Android或IOS自动化测试经验者优先；<br>\
+					5、熟悉性能测试，如LoadRunner者优先；<br>\
+					6、有金融测试经验者优先；<br>\
+					7、具备很强的学习能力、沟通能力和语言表达能力，善于团队合作。'
+			},
+			{
+				t: 'IOS开发工程师',
+				n: 2,
+				p: '技术类',
+				d: '互联网产品部',
+				c: '深圳总部',
+				z: '1、负责对现有的 iOS APP 进行维护，并根据产品设计，完成新功能的开发；<br>\
+					2、对具体产品需求或模块进行开发时间和风险评估；<br>\
+					3、独立完成 iOS 软件开发、验证和和修正测试中发现的问题；<br>\
+					4、主动学习iOS开发新技术、扩展功能，不断提高自己的开发水平；',
+				r: '1、计算机或者相关专业本科及以上学历；<br>\
+					2、两年以上iOS项目开发经验；<br>\
+					3、有良好的Objective-C基础、熟练掌握iOS平台下的网络通信、UI编程、多线程等特性，熟练使用Xcode和程序调试技巧；<br>\
+					4、能独立进行应用程序开发和维护，同时具有良好的团队合作意识和较强的责任心；<br>\
+					5、熟悉软件开发流程及开发设计思想，能熟悉运用常用的设计模及基本算法；<br>\
+					5、有良好的表达及沟通能力强以及快速的学习能力，能适应较大的工作压力；<br>\
+					6、有App Store上线作品者优先；有商业iOS软件开发经验者优先。<br>\
+					7、有参与过一年以上产品开发迭代经验者优先。',
+				w: '为节约双方时间，请注意以下几点：<br>\
+					1、必须带上iOS App作品，如条件允许，请带上项目源代码；<br>\
+					3、有互联网公司或金融业相关行业业务履历者有加分；<br>\
+					4、提供Github或stackoverflow账号者有加分；<br>\
+					5、有自己的技术博客者有加分；'
+			},
+			{
+				t: '测试工程师',
+				n: 2,
+				p: '技术类',
+				d: '互联网产品部',
+				c: '深圳总部',
+				z: '1、根据产品规范编写测试计划，设计测试数据和测试用例；<br>\
+					2、负责产品的多平台测试工作，配合开发人员提供相应信息以修正BUG；<br>\
+					3、负责产品集成测试与自动化测试环境的优化；<br>\
+					4、负责单元测试及自动化测试脚本的编写，撰写相关文档。',
+				r: '1、熟悉软件测试流程，以及客户端UI、性能、功能等方面的测试；<br>\
+					2、熟悉Android或IOS手机操作系统及应用程序设计；<br>\
+					3、有很强的质量意识，能严格地遵照测试流程规范；<br>\
+					4、有团队协作精神，良好的沟通能力、责任心和主动性；<br>\
+					5、有Android和iOS平台应用测试经验优先；<br>\
+					6、熟练使用缺陷管理工具和测试管理工具者优先；<br>\
+					7、有自动化、性能测试工作经验优先考虑；<br>\
+					8、在迭代周期内快速完成测试工作，保证项目质量。'
+			},
+			{
+				t: '品牌活动主管',
+				n: 3,
+				p: '产品运营类',
+				d: '互联网产品部',
+				c: '深圳总部',
+				z: '1、根据公司定位和品牌战略，制定活动计划，策划论坛、见面会等各类活动；<br>\
+					2、负责与活动相关组织的对接；<br>\
+					3、活动现场的组织、控制、宣传物料的准备；<br>\
+					4、高管演讲提纲的撰写；<br>\
+					5、新闻通稿的准备或安排。',
+				r: '1、有过线下大型活动的全案策划及组织经验；<br>\
+					2、具备优秀的文字功底；<br>\
+					3、具备阅读英文资料的水平；<br>\
+					4、有财经媒体工作经验者优先。'
+			},
+			{
+				t: '金融渠道合作部总监（融资担保、银行方向）',
+				n: 4,
+				p: '金融类',
+				d: '风控部',
+				c: '深圳总部',
+				z: '1.	负责对接融资担保公司、银行合作项目的内外部运营；<br>\
+					2.	整合各种资源，制定合作实施计划，开展深度合作；<br>\
+					3.	商务合同确认、项目跟进、及时结算等，有效处理各类合作中的问题；<br>\
+					4.	负责营收合作的数据监控和反馈跟踪，对数据进行分析，及时调整合作策略。',
+				r: '1、本科及以上学历，有金融担保或银行业务工作经验优先；<br>\
+					2、有银行业务相关的推广或商务拓展、谈判、合作经验；<br>\
+					3、具备优秀的沟通表达能力，有较强的人际交往公关能力； '
+			},
+			{
+				t: '金融产品渠道经理',
+				n: 4,
+				p: '金融类',
+				d: '风控部',
+				c: '深圳总部',
+				z: '1、 开发银行、三方理财等合作渠道，建立大额金融产品（信托、私募）分销合作关系；<br>\
+					2、 向上游渠道拿大额金融产品（信托、私募）、把大额金融产品销售给下游渠道，完成销售目标，提升公司渠道销售规模。',
+				r: '1、 性格要求：外向型、活泼、善于沟通；<br>\
+					2、 拥有渠道资源者优先；<br>\
+					3、 有过银行理财、三方理财等从业经验，做过渠道拓展工作者优先。'
+			},
+			{
+				t: '融资租赁业务部总经理',
+				n: 4,
+				p: '金融类',
+				d: '风控部',
+				c: '深圳总部',
+				z: '1. 负责企业的融资租赁以及项目融资、设备融资项目开拓；<br>\
+					2. 负责集团推荐客户的有效落地，开发拓展目标客户，维护及管理客户关系；<br>\
+					3. 根据客户业务需求，深入理解客户需求，开发融资租赁新产品；<br>\
+					4. 负责从项目立项、信息收集、项目评估到合同签订过程的执行；<br>\
+					5. 负责处理公司与融资、贷款相关的各种外部事宜和与有关部门建立良好的合作关系；<br>\
+					6. 协助对承租客户、租赁项目及租赁物件信息的持续收集。',
+				r: '1. 大学本科以上学历（经济、金融、财务、理工等专业优先）；<br>\
+					2. 5年或以上工作经验；<br>\
+					3. 具有2年或以上的融资租赁、小额贷款或不动产抵押的相关经验；<br>\
+					4. 具有良好的营销能力；<br>\
+					5. 熟悉融资业务流程并了解相关的金融政策；<br>\
+					6. 具有良好的行业分析与判断能力；<br>\
+					7. 具有良好的沟通表达能力及团队协调与合作能力；<br>\
+					8. 能够独立进行项目的全套操作。'
+			},
+			{
+				t: '融资租赁业务经理',
+				n: 4,
+				p: '金融类',
+				d: '风控部',
+				c: '深圳总部',
+				z: '主要从事对融资租赁及金融租赁公司的营销拓展：<br>\
+					1、负责开发、拓展融资租赁及金融租赁公司；<br>\
+					2、根据业务发展规划及客户需求，进行产品研发与创新；<br>\
+					3、负责对已有客户的关系维护；<br>\
+					4、推进融资租赁项目业务计划，配合部门领导完成公司下达的相应指标。',
+				r: '1、具有金融、经济或相关专业本科（含）以上学历；年龄30周岁（含）以下；<br>\
+					2、具备2年以上银行对公授信经验或2年以上融资租赁公司业务经验；<br>\
+					3、熟悉国家金融政策法规，熟悉本地金融市场；<br>\
+					4、具有较强的团队合作精神，良好的语言表达能力和沟通能力，调查研究能力、文字处理能力和分析判断能力；<br>\
+					5、具备良好的职业素养，能够承受高强度的工作压力。'
+			},
+			{
+				t: '汽车贷款评估师',
+				n: 4,
+				p: '金融类',
+				d: '风控部',
+				c: '深圳总部',
+				z: '1、执行风控经理所制定的计划，对公司汽车贷款客户车辆价值进行精确评估；<br>\
+					2、负责二手车评估，对车辆的综合状况进行检测，并对车辆鉴定评估；<br>\
+					3、根据市场交易情况做出对车辆价值的风险控制；<br>\
+					4、对公司抵押车辆进行全面的评估，给出客观标准的评估价格，出具评估报告；<br>\
+					5、定期依据已实施评估项目汇总数据，做出公司评估数据的综合评价。',
+				r: '1、全日制大专及以上学历，持有二手车评估资格证书；<br>\
+					2、1年以上二手车评估经验，持有驾驶证C1证及以上、驾驶技术熟练，熟悉路况及车辆维护者优先；<br>\
+					3、具备各种车型车况鉴定能力，能准确评估车辆价值；<br>\
+					4、熟悉GPS的安装，有车贷行业经验，熟悉深圳车管所抵押、解押系统操作流程优先；<br>\
+					5、熟悉市场新车和二手车市场价格行情，了解二手车市场的交易动态和车管所的车辆交易制度，掌握车辆抵押相关手续及过户、专籍、保险等流程；<br>\
+					6、具有敏锐的分析和判断能力及良好的团队合作精神，承压能力强，工作态度积极乐观，为人正直、坦诚，责任心强，具有良好的职业素养和品行。'
+			},
+			{
+				t: '汽车贷款审核专员',
+				n: 4,
+				p: '金融类',
+				d: '风控部',
+				c: '深圳总部',
+				z: '1、根据风控部车辆贷款风险政策执行日常工作；<br>\
+					2、按照信贷政策和业务流程要求，对贷款申请进行审核，分析审核借款人资信条件，撰写信审报告；<br>\
+					3、把控案件中存在风险，与其他部门同事合作，加强信用管理，降低风险及信贷损失。',
+				r: '1、性别不限，大专及以上学历，经济、金融、管理、计算机等相关专业优先；<br>\
+					2、一年以上汽车贷款同业工作经验,有小额贷款审核经验优先考虑；<br>\
+					3、熟悉汽车贷款行业信贷信审流程操作、抵押环节，以及车贷险的审核标准及业务流程；<br>\
+					4、具有较强的分析能力和沟通能力；<br>\
+					5、办事沉稳、注重细节，工作严谨认真，具有较强合规意识和风险意识。<br>\
+					欢迎有经验者踊跃投递简历，待遇从优，无经验者请勿投递简历。'
+			},
+			{
+				t: '信贷外访专员',
+				n: 4,
+				p: '金融类',
+				d: '风控部',
+				c: '深圳总部',
+				z: '1、按照信贷政策和业务流程要求，对贷款申请进行审核，包括资料审核、征信审核、电话审核、上门考察等，并作出适当的审批结论；<br>\
+					2、控制授信风险、操作风险，达成风险控制目标；<br>\
+					3、按业务流程的效率和质量要求，完成工作目标；<br>\
+					4、协助完善授信审核流程、审核系统功能。',
+				r: '1、性别不限，大专及以上学历，经济、金融、管理、计算机等相关专业优先；<br>\
+					2、一年以上小额贷款授信审核经验； <br>\
+					3、工作严谨认真，具有较强合规意识和风险意识； <br>\
+					4、积极主动，团队意识好，执行力强； <br>\
+					5、具备良好的职业道德和职业精神，具备创新精神。'
+			},
+			{
+				t: '信贷审核专员',
+				n: 4,
+				p: '金融类',
+				d: '风控部',
+				c: '深圳总部',
+				z: '负责对借款客户的综合核查；<br>\
+					上门实地征集并拍照，采集并实地核实客户相关的申请信息，并对所采集的申请信息进行整理、说明，出具审查报告；<br>\
+					根据业务实际情况及行业信息，及时提出风险防范意见；<br>\
+					协助配合风控相关职能岗工作的衔接;<br>\
+					及时与上级或总部相关职能工作的沟通,优化提升本职能力水平及效率。',
+				r: '1.	大专及以上学历，经济、金融、管理、财务等相关专业优先；<br>\
+					2.	为人诚实、踏实、可靠、能吃苦；<br>\
+					3.	具有敏锐的观察能力、较强的分析判断能力、灵活应变能力和沟通能力，优秀的风险评估能力与组织协调能力；<br>\
+					4.	有外访实地考察经验或信贷审核经验者优先。'
+			},
+			{
+				t: '信贷顾问',
+				n: 4,
+				p: '金融类',
+				d: '风控部',
+				c: '深圳总部',
+				z: '1、带领所管辖营业部执行市场推广销售活动、策划销售推广方案、拓展新的销售渠道、推动完成销售目标；<br>\
+					2、负责市场拓展工作，开发目标客户群体，完成公司下达的任务目标； <br>\
+					3、宣传公司品牌形象，为客户提供完善的售前、售中及售后的全方位服务；<br>\
+					4、严格执行公司的风险合规政策，确保贷款客户申请资料的真实性与合规性；<br>\
+					5、定期收集市场同行信息并进行分析与总结。 ',
+				r: '1、中专及以上学历，专业不限，1年以上小额信贷工作经验； <br>\
+					2、了解行业信贷业务知识、公司所经营产品及市场金融相关知识； <br>\
+					3、具备判断与决策能力、谈判能力、人际能力、沟通能力、影响力、计划与执行能力； <br>\
+					4、熟练使用自动化办公软件。 '
+			},
+			{
+				t: '信贷客服主管',
+				n: 5,
+				p: '职能类',
+				d: '人事行政部',
+				c: '深圳总部',
+				z: '1、依托公司资源，通过电话沟通了解客户需求, 寻求再次销售机会并完成销售业绩；<br>\
+					2、为老客户提供专业化的售后服务，维持良好的客户关系，推进客户再次开发；<br>\
+					3、接受贷款客户咨询，记录贷款客户咨询、投诉内容，按照相应流程给予客户反馈；<br>\
+					4、能及时发现来电客户的需求及意见，并记录整理及汇报；<br>\
+					5、为客户提供完整准确的方案及信息，解决客户问题，提供高质量服务；<br>\
+					6、与同事或主管共享信息，进行知识积累，提供流程改善依据；<br>\
+					7、负责受理和妥善处理顾客投诉，调节顾客与公司之间的关系，回答顾客提出的各种咨询和整理、转述客户的具体要求。',
+				r: '1、两年以上工作经验，高中以上学历；<br>\
+					2、有客服和电话销售或网络销售经验者优先，勤奋敬业、责任心强，思路清晰；<br>\
+					3、普通话标准，口齿伶俐，懂得消费者心理，语言表达能力强，擅于沟通；<br>\
+					4、头脑清晰，思维敏捷，具有良好的销售服务意识和团队合作精神；<br>\
+					5、性格好，富有耐心及责任心，身体健康，能够长期稳定的干好工作；<br>\
+					6、电脑使用熟练，打字速度每分钟50字以上，熟悉办公软件和网络工具。'
+			},
+			{
+				t: '荷包APP客服专员',
+				n: 5,
+				p: '职能类',
+				d: '人事行政部',
+				c: '深圳总部',
+				z: '1、负责日常来电接听，包括荷包app产品咨询及相关答疑等；<br>\
+					2、通过在线聊天工具，微信公众号、产品后台等渠道解答用户遇到的各种疑难杂症；<br>\
+					3、记录、上报、跟进、协调处理客户问题反馈；<br>\
+					4、进行线上用户引导，协作其他部门完成各类活动的执行。',
+				r: '1、声音好听、良好的沟通能力，能很好的安抚用户情绪和解决用户的问题；<br>\
+				2、反应敏捷，应变能力强，悟性强，具有独立处理问题的能力；<br>\
+				3、耐心，负责，具有较强问题处理及分析能力；<br>\
+				4、具有团队合作精神、工作态度认真且能长期稳定工作。'
+			}
+		];
+		var renderList = function(){
+			var jobData = joinData;
+			var tpl = '', item;
+			for(var i = 0, len = jobData.length; i<len; i++) {
+				item = jobData[i];
+				tpl += '<li data-type="'+item.n+'">\
+					<a href="javascript:void(0);" class="item" data-jobid="'+(i+1)+'" data-type="'+item.n+'">\
+						<h4>'+item.t+'</h4>\
+						<div class="joinUs-sub">\
+							<span>'+item.p+'</span>\
+							<span>'+item.d+'</span>\
+							<span>'+item.c+'</span>\
+						</div>\
+					</a>\
+				</li>';
+			};
+			$('#jobList').html(tpl);
+		};
+
+		$(function(){
+			renderList();
+			var defaultPage=0;
+			//点击职位类型进入列表
+			$('.joinUs').on('click', 'a', function(){
+				$(this).addClass('select').siblings().removeClass('select');
+				var objImg=$('.joinUs a').eq(defaultPage).find('img');
+				objImg.attr('src',objImg.attr('src').split('.')[0].substr(0,objImg.attr('src').split('.')[0].length-1)+'1.png');
+				defaultPage=$(this).index();
+				objImg=$('.joinUs a').eq(defaultPage).find('img');
+				objImg.attr('src',objImg.attr('src').split('.')[0].substr(0,objImg.attr('src').split('.')[0].length-1)+'2.png');
+				var type = $(this).data('type');
+				$('#join1').hide();
+				$('.joinUsTitle2').html($(this)[0].title);
+				type != 1 && $('#jobList').find('li').not('[data-type="'+type+'"]').hide();
+				$('#join2').fadeIn();
+			});
+
+			$('.joinUs a').eq(0).trigger('click');
+
+			//返回职位类型
+			$('.btn-back2').click(function(){
+				$('#join2').hide();
+				$('#jobList li').show();
+				$('#join1').fadeIn();
+			});
+
+			//点击职位进入详情
+			$('#jobList').on('click', 'a', function(){
+				var jobData = joinData[$(this).data('jobid') - 1];
+				$('#join2').hide();
+				$('.btn-back3').attr('data-type', jobData.n);
+				$('.joinUsTitle3').html(jobData.t);
+				$('.duty').html(jobData.z);
+				$('.require').html(jobData.r);
+				if(jobData.w) {
+					$('.tips').show();
+					$('p.tips').html(jobData.w);
+				} else {
+					$('.tips').hide();
+					$('p.tips').html('');
+				}
+				$('#join3').fadeIn();
+			});
+
+			//返回职位列表
+			$('.btn-back3').click(function(){
+				$('#join3').hide();
+				$('#join2').fadeIn();
+			});
+		})
+	</script>
+
+</body>
+</html>

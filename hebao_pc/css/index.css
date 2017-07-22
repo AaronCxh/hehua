@@ -1,0 +1,148 @@
+/*banner*/
+.banner{
+    width:1340px;
+    min-width: 1340px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.banner img{
+    width: 100%;
+    min-width: 100%;
+}
+.icon_btn{
+    width:80px;
+    height:60px;
+    position:absolute;
+    right:170px;
+    z-index: 9;
+    color: #fff;
+    line-height: 23px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.icon_btn1{
+    top: 120px;
+    background: url(../images/btn1.png) no-repeat;
+    background-size: 100%;
+}
+.icon_btn1:hover{
+   background-image: url(../images/btn1_1.png);
+}
+.icon_btn2{
+    top:220px;
+    background: url(../images/btn2.png) no-repeat;
+    background-size: 100%;
+}
+.icon_btn2:hover{
+    background-image: url(../images/btn2_1.png);
+}
+.licai{
+    margin-top:50px;
+}.licai li{
+    display: inline-block;
+}
+.licai li div{
+    width: 280px;
+    height: 295px;
+}
+.licai li div img{
+    width: 100%;
+    height: 100%;
+}
+.licai p{
+    font-size: 24px;
+    line-height: 30px;
+    text-align:center;
+}
+.licai span{
+    color:#a5a5a5;
+    font-size:18px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+}
+.mr{
+    margin-right: 74.5px;
+}
+.further a{
+    text-align: center;
+    color:#ffad2c;
+    font-size: 24px;
+    margin: 70px auto 100px auto;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+}
+.hbMaps{
+    width: 1000px;
+    height:700px;
+    background: url(../images/maps_1.png) no-repeat;
+    position: relative;
+}
+.hbMaps img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.hbIntro{
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+}
+.hbIntro ul{
+    width: 330px;
+    margin-top: 120px;
+}
+.hbIntro li{
+    text-align: right;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.hbIntro i{
+    display: block;
+    width: 16px;
+    height:16px;
+    background: url(../images/icon_5.png) no-repeat 100%;
+    float: right;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+.hbPhoneIntro{
+    width: 834px;
+    height: 770px;
+    background: url(../images/phone.png) no-repeat 100%;
+    position:absolute;
+    right: -20px;
+    bottom: -300px;
+}
+.PhoneShadows{
+    width: 357px;
+    height: 391px;
+    background: url(../images/icon_4.png) no-repeat 100%;
+    position:absolute;
+    right: 310px;
+    bottom: 80px;
+}
+.copyrightGov p{
+    margin-top: 0;
+    line-height: 90px;
+    width: 460px;
+}
+.copyrightGov ul{
+    margin-top:0px;
+    margin-right: 20px;
+}
+#qrForweixin{
+    left: 264.5px;
+    top: 220px;
+}
+#qrFordown{
+    left: 220px;
+    top:307px;
+}

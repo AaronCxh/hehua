@@ -1,0 +1,126 @@
+.joinBanner{
+    width: 1100px;
+    height: 520px;
+    background: url(../images/banner_6.png) no-repeat 100%;
+    margin: auto;
+}
+.formChoice{
+    margin-top: 90px;
+}
+.formChoice li{
+    width: 200px;
+    height:200px;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+}
+.formChoice img{
+    margin-top: 50px;
+}
+.formChoice .selected{
+    background: #f5f5f5;
+}
+.formChoice li:hover{
+    background: #f5f5f5;
+}
+.connectLines{
+    position: absolute;
+    height: 50px;
+    display: block;
+    width: 1px;
+    background: #ddd;
+    bottom: -50px;
+    left: 50%;
+}
+/*技术类table */
+.positionTable{
+    margin-top: 49px;
+    clear: both;
+    border:1px solid #ddd;
+    margin-bottom: 120px;
+}
+.positionTable table{
+    width: 100%;
+}
+.positionTable td{
+    padding-left: 40px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.positionTable th{
+    padding-left: 40px;
+    height: 50px;
+    line-height: 50px;
+    background: #f5f5f5;
+    color: #a5a5a5;
+}
+.positionTable tr:hover{
+    background: #f5f5f5;
+}
+.positionTable p{
+    text-align: center;
+    padding-top: 45px;
+}
+.positionTable span{
+    color: #ffba00;
+}
+.positionTable ul{
+    margin: 20px auto 30px auto;
+    text-align: center;
+}
+.positionTable li{
+    display: inline-block;
+    font-size: 16px;
+    padding:5px 10px;
+    cursor: pointer;
+}
+.posActive{
+    background: #ddd;
+    color: #fff
+}
+.cutPageList{
+    color: #a5a5a5
+}
+.artText{
+    padding: 30px;
+}
+.artText h3{
+    font-size: 24px;
+}
+.artText h4{
+    color: #000;
+    margin-top: 30px;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.artText p{
+    text-align: left;
+    color: #a5a5a5;
+    line-height: 30px;
+    padding-top: 0px;
+    font-size: 16px;
+}
+.posBorder{
+    border:1px solid #ddd;
+    margin-bottom: 120px;
+     margin-top: 50px;
+    position: relative;
+}
+.joinEmail{
+    margin: 30px auto 40px auto;
+}
+.callbackR{
+    background: #eee;
+    width: 70px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -16px;
+    left: 440px;
+    color: #fff;
+    cursor: pointer;
+}
